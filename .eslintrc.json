@@ -1,0 +1,29 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "eqeqeq": "off",
+        "curly": "error",
+        "quotes": ["error", "double"],
+        "no-shadow": "off",
+        "no-undef": "off",
+        "no-unused-vars": "off",
+        "no-param-reassign": "off",
+        "consistent-return": "off",
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "import/prefer-default-export": "off",
+        "react/require-default-props": "off",
+        "react/button-has-type": "off",
+        "react/function-component-definition": "off",
+        "react/jsx-filename-extension": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/no-autofocus": "off",
+        "jsx-a11y/click-events-have-key-events": "off"
+    }
+}

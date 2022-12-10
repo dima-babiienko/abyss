@@ -1,0 +1,59 @@
+.Item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+
+    .ActionBlock {
+        min-width: 100px;
+        display: flex;
+        gap: 5px;
+
+        &-Save {
+            background: green;
+        }
+
+        &-Delete {
+            background: red;
+
+            &__EditMode {
+                background: #dada54;
+            }
+        }
+    }
+
+    &.IsDefaultChild {
+        & > .ItemBlock {
+            border: 2px dashed gray;
+            background: none;
+            color: black;
+        }
+    }
+
+    .ItemBlock {
+        align-items: center;
+        justify-content: center;
+        background: orange;
+        padding: 15px 20px;
+        color: white;
+        min-width: 150px;
+        margin-left: 100px;
+        border: 1px solid transparent;
+
+        &-Name {
+            text-align: center;
+        }
+
+        &-Edit {
+            background: #ffffff;
+            border: 1px solid gray;
+        }
+
+        input {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 0;
+        }
+    }
+}
